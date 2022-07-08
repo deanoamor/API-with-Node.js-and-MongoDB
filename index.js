@@ -38,10 +38,10 @@ app.use(url, route);
 
 //middleware if route not found
 app.use((req, res) => {
-    const url = req.url;
+    const urlroute = req.url;
     res.status(404).send({
         status: 404,
-        message: `Route ${url} not found`
+        message: `Route ${urlroute} not found`
     })
 });
     
